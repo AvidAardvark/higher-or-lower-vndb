@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Higher or Lower: Visual Novel Edition</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico.png"/> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <p id="header">Higher or Lower: Visual Novel Edition</p>
+    <p id="footer">Made with <a href="https://vndb.org/">VNDB</a> and <a href="https://otakugifs.xyz/">OtakuGIFs API.</a></p>
+    <div class="circle">
+        <p id="vs">vs</p>
+        <img src="check.png" id="check" class="checkorx">
+        <img src="x.png" id="x" class="checkorx">
+    </div>
+    <button type="button" onclick="compareRating('left')" id="leftButton">
+        <img src="" id="left" loading="lazy">
+        <div class="center">
+            <b class="title" id="leftTitle"></b>
+            <b id="leftRating"></b>
+        </div>
+        <div id="bottomLeft">
+            <b>High Score: </b>
+            <b id="highScore"></b>
+        </div>
+    </button>
+    <button type="button" onclick="compareRating('right')" id="rightButton">
+        <img src="" id="right" loading="lazy">
+        <div class="center">
+            <b class="title" id="rightTitle"></b>
+            <b id="rightRating"></b>
+        </div>
+        <div id="bottomRight">
+            <b>Score: </b>
+            <b id="score"></b>
+        </div>
+    </button>
+</body>
+
+
+</html>
